@@ -1,0 +1,55 @@
+### i start using the mysql -u root commend to gine access to mysql as root
+
+```
+mysql -u root -p
+```
+
+### the commend showed an error message ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+
+### used apt-get install commend to install mysql
+
+```
+sudo apt-get install mysql-server
+```
+
+### the following packages were installed to the system
+- libcgi-fast-perl
+- libcgi-pm-perl
+- libencode-locale-perl
+- libevent-core-2.1-7
+- libevent-pthreads-2.1-7
+- libfcgi-perl
+- libhtml-parser-perl
+- libhtml-tagset-perl
+- libhtml-template-perl
+- libhttp-date-perl
+- libhttp-message-perl
+- libio-html-perl
+- liblwp-mediatypes-perl
+- libmecab2
+- libtimedate-perl
+- liburi-perl
+- mecab-ipadic
+- mecab-ipadic-utf8
+- mecab-utils
+- mysql-server-8.0
+- mysql-server-core-8.0
+
+### the packages were located 
+
+### checking the status of the mysql server
+```
+sudo systemctl status mysql
+```
+
+### the commend showed that mysql server was active and running
+
+### trying to the mysql -u root commend agian
+
+```
+mysql -u root -p
+```
+
+### the result was an error message
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+
